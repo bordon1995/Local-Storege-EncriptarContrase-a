@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
+  <header class="header">
+    <i class="fas fa-user-lock icono-1"></i>
+    <h1>Cryptography</h1>
+  </header>
+
+  <main class="main">
+
+    <div class="input">
+      <div>
+        <p>Introduzca la contraseña que quieras encriptar</p>
+        <input class="input__password" type="text" placeholder="Contraseña">
+      </div>
+      <div>
+        <p>Introduzca la página web</p>
+        <input class="input__web" type="text" placeholder="Pagina web">
+        <div  id="web">
+          <i id="vandera" class="fas fa-exclamation-triangle icono-2"></i>
+        </div>
+      </div>
+    </div>
+    
+    <div id="boton">
+      <input id="boton-uno" class="boton" type="submit" value="Encriptar">
+      <input id="boton-dos" class="boton" type="submit" value="Guardar">
+    </div>
+
+    <div class="estilo">
+      <table class="estilo__tabla">
+        <tbody>
+          <tr>
+            <th class="contraseña">Contraseñas</th>
+            <th id="filaweb" class="web query1400">Páginas Web</th>
+          </tr>
+        </tbody>
+        <tbody id="informacion">
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+
+
+  <script src="https://kit.fontawesome.com/46016f5202.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>

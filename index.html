@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesion</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/usuario.css">
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
+  <header class="header">
+    <i class="fas fa-user-lock icono-1"></i>
+    <h1>Cryptography</h1>
+  </header>
+
+  <form>
+
+    <div class="grupo">
+      <label class="usuario">Usuario</label>
+      <input class="usuario usuario__input" type="text">
+    </div>
+
+    <div class="grupo">
+      <label class="password">Contraseña</label>
+      <input class="password password__input" type="password">
+    </div>
+    <div id="repetir-password" class="grupo">
+      <label class="password">Repetir Contraseña</label>
+      <input class="password2 password password__input" type="password">
+    </div>
+
+    <div id="web">
+      <i id="vandera" class="fas fa-exclamation-triangle icono-2"></i>
+    </div>
+
+    <div class="boton">
+      <input class="style existente" type="submit" value="Ingresar">
+      <input class="style nuevo" type="submit" value="Crear">
+    </div>
+
+  </form>
+
+  <script src="https://kit.fontawesome.com/46016f5202.js" crossorigin="anonymous"></script>
+  <script src="iniciosecion.js"></script>
+</body>
+</html>

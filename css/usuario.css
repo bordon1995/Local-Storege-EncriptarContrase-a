@@ -1,0 +1,205 @@
+:root {
+  --fontfamily: "Mogra", cursive;
+  --primario: #333333;
+  --secundario: #55a5ff;
+  --terceario: #64db8f;
+}
+
+body {
+  max-width: 100%;
+  height: 1024px;
+
+  background: #72bdea;
+  font-family: var(--fontfamily);
+  position: relative;
+  margin: 0px 10px;
+}
+.header {
+  display: flex;
+  /* margin: 1rem; */
+  margin: auto;
+  justify-content: center;
+}
+.header h1 {
+  margin-left: 1rem;
+}
+.icono-1 {
+  font-size: 3rem;
+}
+
+form {
+  width: 100%;
+  margin: 5rem 0px;
+}
+
+.grupo {
+  padding: 0.5rem 0px;
+  text-align: left;
+}
+
+.usuario,
+.password {
+  display: block;
+  /* font-size: 2rem; */
+  margin-bottom: 0.5rem;
+}
+
+.usuario__input,
+.password__input {
+  width: 100%;
+  margin: 0px;
+  background-color: var(--primario);
+  color: white;
+  border: none;
+  padding: 5px 0px;
+}
+
+.boton {
+  text-align: center;
+  margin-top: 2rem;
+}
+.style:hover {
+  box-shadow: 0px 0px 40px rgb(255, 254, 254);
+}
+.style {
+  padding: 0.7rem;
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  background-color: var(--terceario);
+  font-size: 1rem;
+  font-family: var(--fontfamily);
+}
+.existente {
+  display: none;
+}
+
+.icono-2 {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 4rem;
+  bottom: 4px;
+}
+#web {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 1rem;
+}
+#web {
+  display: none;
+}
+.alertError {
+  background-color: rgb(247, 93, 93);
+  width: 80%;
+  padding: 5px;
+  margin: 0px;
+  padding-top: 10px;
+  text-align: center;
+}
+.alertCorrecto {
+  background-color: var(--terceario);
+  width: 80%;
+  padding: 5px;
+  margin: 0px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    margin: 1rem;
+    margin: auto;
+    justify-content: left;
+  }
+  form {
+    width: 50%;
+    margin: 5rem auto;
+    text-align: -webkit-center;
+  }
+  .grupo {
+    padding: 0.5rem;
+    text-align: left;
+  }
+  .usuario__input,
+  .password__input {
+    width: 100%;
+    margin: 0px;
+    background-color: var(--primario);
+    color: white;
+  }
+  .boton {
+    text-align: center;
+    width: 80%;
+  }
+  .style {
+    padding: 10px;
+    width: 40%;
+  }
+  #web {
+    width: 80%;
+  }
+  .icono-2 {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 3rem;
+    bottom: 4px;
+  }
+  .alertError {
+    width: 80%;
+  }
+  .alertCorrecto {
+    width: 80%;
+  }
+}
+
+@media (min-width: 800px) {
+  .header {
+    display: flex;
+    margin: 1rem;
+    margin: auto;
+    justify-content: left;
+  }
+  form {
+    width: 50%;
+    margin: 5rem auto;
+    text-align: center;
+  }
+  .grupo {
+    padding: 0.5rem;
+    text-align: left;
+  }
+  .usuario__input,
+  .password__input {
+    width: 80%;
+    margin: 0px;
+    background-color: var(--primario);
+    color: white;
+  }
+  .boton {
+    text-align: center;
+    width: 80%;
+  }
+  .style {
+    padding: 1rem;
+    width: 30%;
+  }
+  .icono-2 {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 5rem;
+    bottom: 4px;
+  }
+  .alertError {
+    width: 80%;
+  }
+  .alertCorrecto {
+    width: 80%;
+  }
+  #web {
+    width: 80%;
+  }
+}
